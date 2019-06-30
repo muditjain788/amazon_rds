@@ -1,0 +1,11 @@
+yum install mysql -y
+
+#Now to connect with RDS you have to use Endpoint Name for access.
+mysql -u root -h "endpoint in amazon" -p
+#To import data from an external source or file use the IO Redirection sign  '<' for importing.
+mysql -u root -h -p  muditdb < myfile.sql
+#this mysql.sql is stored on 
+https://raw.githubusercontent.com/redashu/dbconnect/master/mysqldump/myfile.sql
+#In python, connector is called as library install it as
+$pip3 install mysql-connector-python
+m
